@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:clipToPadding="false"
+
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/selectall_filter"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="11dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_menu"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/menu_checkbox_select_all"
+
+                android:gravity="center_vertical"
+                android:text="Select All"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+            <CheckBox
+                android:id="@+id/menu_checkbox_select_all"
+
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector"
+                android:layout_marginEnd="4dp"
+                />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/btm_sheet_filterduplicate_list"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/selectall_filter"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+
+
+</FrameLayout>

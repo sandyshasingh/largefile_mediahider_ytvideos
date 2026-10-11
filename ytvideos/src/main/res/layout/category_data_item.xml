@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/spacing8"
+    android:layout_marginEnd="@dimen/spacing8"
+    android:layout_marginTop="12dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/videoItem"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/menu"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="82dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="142dp"
+                app:cardCornerRadius="10dp"
+
+                app:cardBackgroundColor="@color/backgroundcolor"
+                android:layout_height="96dp">
+
+                <ImageView
+                    android:id="@+id/videoThumbnail"
+                    android:layout_width="142dp"
+                    android:layout_height="96dp"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <ImageView
+                android:id="@+id/video_icon"
+                android:layout_width="@dimen/size_48"
+                android:layout_height="@dimen/size_48"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_new_player_play" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/spacing16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Pineapple extravaganza"
+                    android:textColor="@color/white"
+                    android:maxLines="2"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:id="@+id/videoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="mp4"
+                    android:layout_weight="0"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    android:id="@+id/videoViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <ImageView
+
+        android:id="@+id/menu"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:layout_marginStart="12dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        app:tint="@color/white"
+        android:src="@drawable/share_icon"
+        />
+
+</RelativeLayout>

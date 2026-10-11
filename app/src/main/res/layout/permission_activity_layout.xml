@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/permission_bigimage"
+        android:layout_width="220dp"
+        android:scaleType="fitCenter"
+        android:padding="32dp"
+
+        android:src="@drawable/clean_icon"
+
+        android:layout_height="220dp"
+        android:background="@drawable/clean_icon_bkgnd"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="32dp"
+
+        app:layout_constraintBottom_toTopOf="@id/first_line"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/allow_tag"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="110dp"
+        android:lineSpacingExtra="-10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Allow"
+        android:textSize="14sp"
+        android:background="@drawable/clean_icon_bkgnd"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/allow_tag"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:textColor="@color/black"
+        android:text="1. Delete unused files\n2. Clean up space\n\nPlease grant read and write permissions to continue."/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/txt2"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:gravity="center"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:textColor="@color/black"
+        android:text="We need access to your storage to clean  files.\nThis allows us to:"/>
+
+
+
+    <TextView
+        android:id="@+id/first_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Cleaner"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/txt1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#FFFFFF</color>
+    <color name="background">#262a35</color>
+    <color name="black">#000000</color>
+    <color name="endFmColor">#13051E</color>
+    <color name="material_gray_100">#F5F5F5</color>
+    <color name="material_gray_200">#EEEEEE</color>
+    <color name="material_gray_400">#bdbdbd</color>
+    <color name="material_gray_50">#FAFAFA</color>
+    <color name="material_gray_500">#9E9E9E</color>
+    <color name="material_gray_600">#757575</color>
+    <color name="material_gray_700">#616161</color>
+    <color name="material_gray_800">#424242</color>
+    <color name="material_gray_900">#212121</color>
+    <color name="nit_common_color">#EE3313</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="selected_blue_light">#1A4C53B4</color>
+    <color name="startFmPlayer">#480777</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#59ffffff</color>
+    <color name="window_bacground">#CE81026C</color>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="spacing16">16dp</dimen>
+    <string name="ad_junk">AD junk</string>
+    <string name="apks_clean">Apks</string>
+    <string name="cancel_clean">Cancel</string>
+    <string name="clean_txt1">Remove all the junk files \nwith just one click</string>
+    <string name="clean_txt2">Save disk space and improve\n your mobile performance</string>
+    <string name="clean_txt3">Your phone is junk free now! </string>
+    <string name="clean_up">Clean Up</string>
+    <string name="documents">Documents</string>
+    <string name="done_clean">Done</string>
+    <string name="duplicate_file">Duplicate Files</string>
+    <string name="empty_folders">Empty folders</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="junk_clean">Junk Clean</string>
+    <string name="music">Music</string>
+    <string name="no_junk">No junk</string>
+    <string name="photos">Photos</string>
+    <string name="residual_junk">Residual junk</string>
+    <string name="system_junk">System junk</string>
+    <string name="videos">Videos</string>
+    <style name="Theme.CleanMaster" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="actionModeBackground">@color/white</item>
+        <item name="android:textColor">#000000</item>
+        <item name="colorPrimaryDark">#2C2D34</item>
+
+
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="android:textColorPrimary">@color/material_gray_900</item>
+
+
+
+    </style>
+</resources>

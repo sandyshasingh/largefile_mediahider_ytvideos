@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HiderFeatureIntroScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/onboard_view_pager"
+            android:layout_above="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/btmlayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.example.mediahider.utils.CirclePageIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:fillColor="#298AF1"
+                android:spacing="8dp"
+                android:layout_centerVertical="true"
+                app:pageColor="#61282361"
+                app:radius="4dp"
+                app:strokeColor="#61282361" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btmlayout"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="48dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginEnd="24dp"
+                android:text="@string/skip"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:textColor="#1E1E1E"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/startBtn"
+                android:visibility="gone"
+
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="Start!"
+                android:layout_marginEnd="18dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+
+                android:background="@drawable/next_btn_onboarding_bkgnd"/>
+
+
+
+
+            <TextView
+                android:id="@+id/nextitem"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:layout_marginEnd="18dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+
+                android:background="@drawable/next_btn_onboarding_bkgnd"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

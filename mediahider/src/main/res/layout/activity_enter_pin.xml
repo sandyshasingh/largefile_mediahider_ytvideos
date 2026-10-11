@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterPin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+
+        android:background="@android:color/white">
+
+        <!-- Icon -->
+        <ImageView
+            android:id="@+id/iconVault"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:src="@drawable/mediahider_icon"
+            android:contentDescription="Vault Icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lock Your Private Moments"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            app:layout_constraintTop_toBottomOf="@id/iconVault"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp" />
+
+        <!-- Subheading -->
+        <TextView
+            android:id="@+id/settingUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your PIN to securely access your\nhidden vault."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="6dp" />
+
+
+        <LinearLayout
+            android:id="@+id/pinCodeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@id/settingUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Repeat this EditText 4 times -->
+            <EditText
+                style="@style/PinBoxStyle"
+                android:id="@+id/pin1" />
+            <EditText
+                style="@style/PinBoxStyle"
+                android:id="@+id/pin2" />
+            <EditText
+                style="@style/PinBoxStyle"
+                android:id="@+id/pin3" />
+            <EditText
+                style="@style/PinBoxStyle"
+                android:id="@+id/pin4" />
+        </LinearLayout>
+
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continueBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/blue"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

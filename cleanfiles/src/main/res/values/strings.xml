@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="clean_up">Clean Up</string>
+    <string name="clean_txt1">Remove all the junk files \nwith just one click</string>
+    <string name="clean_txt2">Save disk space and improve\n your mobile performance</string>
+    <string name="clean_txt3">Your phone is junk free now! </string>
+    <string name="junk_clean">Junk Clean</string>
+    <string name="cancel_clean">Cancel</string>
+    <string name="residual_junk">Residual junk</string>
+    <string name="system_junk">System junk</string>
+    <string name="empty_folders">Empty folders</string>
+    <string name="ad_junk">AD junk</string>
+    <string name="apks_clean">Apks</string>
+    <string name="no_junk">No junk</string>
+    <string name="done_clean">Done</string>
+    <string name="duplicate_file">Duplicate Files</string>
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="music">Music</string>
+    <string name="documents">Documents</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

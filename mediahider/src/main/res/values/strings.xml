@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">mediahider</string>
+    <string name="skip">Skip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboardtxt2">Hide photos, videos, and audio in one tap. Safe, hidden, and only you can access them.</string>
+    <string name="onboardtxt1">Smart Privacy Tools</string>
+    <string name="onboardtxt3">Ultra-Secure Vault Access</string>
+    <string name="onboardtxt4">Access your vault with PIN, fingerprint, or face lock—only you can unlock it.</string>
+    <string name="folder_permission">Folder Permission</string>
+    <string name="permission_required">Permission required</string>
+    <string name="moving">Moving</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="Open">Open</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+</resources>
